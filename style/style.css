@@ -9,22 +9,6 @@ p {
 .underline {
 	text-decoration: underline;
 }
-h2 {
-	display: inline-block;
-	margin: 5px 3%;
-	padding: 5px;
-	font-size: 20px;
-	border: 1px solid black;
-	background-color: white;
-}
-.solution{
-	display: inline-block;
-	margin: 5px 3%;
-	padding: 5px;
-	font-size: 20px;
-	border: 1px solid black;
-	background-color: white;
-}
 div {
 	margin: 5px 5%;
 	padding: 5px;
@@ -47,6 +31,14 @@ h1 {
 	text-shadow: 1px 1px 5px black;
 	box-shadow: 5px 3px 3px #C0C0C0;
 }
+h2 {
+	display: inline-block;
+	margin: 1px 3%;
+	padding: 0 5px;
+	font-size: 20px;
+	border: 1px solid black;
+	background-color: white;
+}
 .complete {
 	display: inline-block;
 	background-color: green;
@@ -56,4 +48,12 @@ h1 {
 	border: 1px solid black;
 	text-shadow: 1px 1px 5px black;
 	box-shadow: 5px 3px 3px #C0C0C0;
+}
+.task2 {
+	overflow-x:hidden;
+	margin: 5px 5%;
+	padding: 5px;
+    background-color: white;
+	border: 1px solid black;
+	height: 200px;
 }
