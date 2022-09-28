@@ -82,3 +82,14 @@ function task2CycleWhile () {
 		i--
 	};
 };
+
+//Task 3
+function task3Sum () {
+	let sum = 0;
+	i = 0;
+	while (i <= 100) {
+		sum = sum + i;
+		i++
+	};
+	document.write (`Сумма чисел от 0 до 100 равна ${sum}, легко!`);
+};
