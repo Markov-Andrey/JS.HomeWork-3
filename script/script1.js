@@ -93,3 +93,5 @@ function task3Sum () {
 	};
 	document.write (`Сумма чисел от 0 до 100 равна ${sum}, легко!`);
 };
+
+//Task 4
