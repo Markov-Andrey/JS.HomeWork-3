@@ -95,3 +95,13 @@ function task3Sum () {
 };
 
 //Task 4
+function task4Sum () {
+	for (i = 1; i <= 5; i++) {	
+		sum = 0;
+		for (let z = 1; z <= i; z++){
+			sum = sum + z;
+		};
+		document.write (`Сумма чисел в числе ${i} равна ${sum}<br>`);
+	};
+	document.write (`Готово, продолжим`);
+};
