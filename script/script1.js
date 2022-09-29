@@ -128,7 +128,7 @@ function task5EvenNumber (){
 //Task 6
 function task6MultiplicationTable (){
 	i = 2,	x = 2;
-	document.write (`Таблица умножения<table><tr>`)
+	document.write (`Таблица умножения (работа с тэгами таблицы)<table><tr>`)
     while (x <= 10) {
     	while (i <= 10) {
     		document.write (`<td>${i} * ${x} = ${i*x}</td>`);
@@ -151,7 +151,7 @@ function task7DivideNumber (){
 	};
 	num = i;
 	document.write (`Решение через цикл, 
-		с проверкой переменной n>=50
+		с проверкой переменной n>=50<br>
 		<br>Итоговое число: ${n};
 		<br>Количество итераций: ${num}`)
 };
@@ -176,4 +176,33 @@ function task8SumNumber (){
 	} else {
 		document.write (`Нет введенных чисел. Перезагрузите страницу.`)
 	}
+};
+
+//Task 9
+function task9Split (){
+	let arrayNumber;
+	num = null;
+	i = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+	x = 0;
+	arrayNumber = i.split (' ');
+	document.write (`Создан массив "arrayNumber" через метод ".split" 
+	на основе символа "пробел":<br>
+	"${arrayNumber}"
+	<br>Далее работает 2 цикла c проверкой по созданному массиву.<br><br>`);
+	while (arrayNumber[x] < arrayNumber.length) {
+		if (arrayNumber[x] > arrayNumber[x + 1]) {
+			num = arrayNumber[x];
+		}
+		x++;
+	}
+	document.write (`Самое большое число - ${arrayNumber[x]}<br>`);
+	num = null;
+	x = 0;
+	while (arrayNumber[x] < arrayNumber.length) {
+		if (arrayNumber[x] < arrayNumber[x + 1]) {
+			num = arrayNumber[x];
+		}
+		x++;
+	}
+	document.write (`Самое маленькое число - ${arrayNumber[num]}<br>`);
 };
