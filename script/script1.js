@@ -105,3 +105,22 @@ function task4Sum () {
 	};
 	document.write (`Готово, продолжим`);
 };
+
+//Task 5
+function task5EvenNumber (){
+	document.write (`<table><tr><td>Цикл "For"</td>`)
+    for (i = 8; i <= 56; i++) {
+		if (i % 2 == 0){
+			document.write (`<td>${i}</td>`);
+        };
+    };
+	document.write (`</tr><tr><td>Цикл "While"</td>`)
+    i = 8;
+    while (i <= 56) {
+		if (i % 2 == 0){
+			document.write (`<td>${i}</td>`);
+		};
+		i++
+    };
+	document.write (`</tr></table>`)
+};

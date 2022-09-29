@@ -57,3 +57,12 @@ h2 {
 	border: 1px solid black;
 	height: 200px;
 }
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+	padding: 2px;
+	font-size: 20px;
+}
