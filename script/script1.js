@@ -186,9 +186,7 @@ function task8SumNumber (){
 //Task 9
 function task9Split (){
 	let arrayNumber;
-	num = null;
 	i = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-	x = 0;
 	arrayNumber = i.split (' ');
 	document.write (`Создан массив "arrayNumber" через метод ".split" 
 	на основе символа "пробел":<br>
@@ -198,20 +196,16 @@ function task9Split (){
 	в случае выполнения условия мы задаем переменную как наше искомое значение,<br>
 	иначе ничего не делаем и "прогоняем" сл. итерацию;
 	<br><br>`);
-	while (arrayNumber[x] < arrayNumber.length) {
+	for (x=0, num = null; arrayNumber[x] < arrayNumber.length; x++) {
 		if (arrayNumber[x] > arrayNumber[x + 1]) {
 			num = arrayNumber[x];
 		};
-		x++;
 	};
 	document.write (`Самое большое число - ${arrayNumber[x]}<br>`);
-	num = null;
-	x = 0;
-	while (arrayNumber[x] < arrayNumber.length) {
+	for (x=0, num = null; arrayNumber[x] < arrayNumber.length; x++) {
 		if (arrayNumber[x] < arrayNumber[x + 1]) {
 			num = arrayNumber[x];
 		};
-		x++;
 	};
 	document.write (`Самое маленькое число - ${arrayNumber[num]}<br>`);
 };
