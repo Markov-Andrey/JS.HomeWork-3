@@ -145,18 +145,16 @@ function task6MultiplicationTable (){
 };
 
 //Task 7
+//Task 7
 function task7DivideNumber (){
 	let n = 1000;
-	i = 0;
-	while (n >= 50) {
+	for (num = 0; n >= 50; num++) {
 		n = n / 2;
-		i++
 	};
-	num = i;
 	document.write (`Решение через цикл, 
 		с проверкой переменной n>=50<br>
 		<br>Итоговое число: ${n};
-		<br>Количество итераций: ${num}`)
+		<br>Количество итераций: ${num}`);
 };
 
 //Task 8
