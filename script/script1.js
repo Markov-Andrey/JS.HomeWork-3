@@ -124,3 +124,19 @@ function task5EvenNumber (){
     };
 	document.write (`</tr></table>`)
 };
+
+//Task 6
+function task6MultiplicationTable (){
+	i = 2,	x = 2;
+	document.write (`Таблица умножения<table><tr>`)
+    while (x <= 10) {
+    	while (i <= 10) {
+    		document.write (`<td>${i} * ${x} = ${i*x}</td>`);
+    		i++;
+    	};
+		document.write (`</tr><tr>`)
+    	i = 2;
+		x++
+    };
+	document.write (`</tr></table>`)
+};
