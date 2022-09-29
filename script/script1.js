@@ -168,14 +168,16 @@ function task8SumNumber (){
 		} else {
 			x++;
 			num = num + i;
+			document.write (`${i}, `);
 		};
 	};
+	document.write (`. Я не виноват, вы сами ввели такие числа!<br><br>`);
 	if (x > 0) {
 		document.write (`Сумма = ${num}<br>Среднее арифмитическое из 
 		${x} введеных чисел = ${num / x}`)
 	} else {
 		document.write (`Нет введенных чисел. Перезагрузите страницу.`)
-	}
+	};
 };
 
 //Task 9
@@ -192,17 +194,40 @@ function task9Split (){
 	while (arrayNumber[x] < arrayNumber.length) {
 		if (arrayNumber[x] > arrayNumber[x + 1]) {
 			num = arrayNumber[x];
-		}
+		};
 		x++;
-	}
+	};
 	document.write (`Самое большое число - ${arrayNumber[x]}<br>`);
 	num = null;
 	x = 0;
 	while (arrayNumber[x] < arrayNumber.length) {
 		if (arrayNumber[x] < arrayNumber[x + 1]) {
 			num = arrayNumber[x];
-		}
+		};
 		x++;
-	}
+	};
 	document.write (`Самое маленькое число - ${arrayNumber[num]}<br>`);
+};
+
+//Task 10
+function task10Math (){
+	n = '1000';
+	x = 0;
+	num = 0;
+	i = n.split ('');
+	document.write (`
+		Создан массив "i" через метод ".split" посимвольно, 
+		далее работаем с массивом - выводим массив, 
+		узнаем длину массива с помощью метода ".length", 
+		циклом считаем сумму чисел в массиве, 
+		меняем порядок с помощью метода ".reversed" <br><br>
+	`);
+	for (x = 0; x < i.length; x++) {
+		i[x] = +i[x];
+		num = num + i[x];
+	};
+		document.write (`<ul><li>a. Массив чисел - ${i}</li>`);
+		document.write (`<li>b. Цифр в числе - ${i.length}</li>`);
+		document.write (`<li>с. Сумма цифр числа - ${num}</li>`);
+		document.write (`<li>d. Обратный порядок - ${i.reverse()}</li></ul>`);
 };

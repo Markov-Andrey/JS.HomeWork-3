@@ -69,3 +69,10 @@ td {
 	font-size: 20px;
 	text-align: center;
 }
+ul {
+	margin: 5px;
+	font-size: 20px;
+}
+li {
+	margin-left: 25px;
+}
