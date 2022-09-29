@@ -10,7 +10,7 @@ p {
 	text-decoration: underline;
 }
 div {
-	margin: 5px 5%;
+	margin: 15px 5%;
 	padding: 5px;
     background-color: #FFF5EE;
 	border: 2px solid gray;
@@ -19,6 +19,7 @@ div {
 div:hover {
 	box-shadow: 5px 3px 3px gray;
 	transition-duration: .3s;
+    background-color: #FFDEAD;
 }
 h1 {
 	text-align: center;
@@ -60,6 +61,7 @@ h2 {
 table {
 	border-collapse: collapse;
 	border: 1px solid black;
+    background-color: white;
 }
 td {
 	border: 1px solid black;
