@@ -166,11 +166,14 @@ function task8SumNumber (){
 		if (Number.isNaN(i)) {
 			alert ('Вводите числа, а не строки. Попробуем ещё');
 		} else {
-			i = +i;
-			num = num + i;
 			x++;
+			num = num + i;
 		};
 	};
-	document.write (`Сумма = ${num}<br>Среднее арифмитическое из 
-	${x} введеных чисел = ${num / x}`)
+	if (x > 0) {
+		document.write (`Сумма = ${num}<br>Среднее арифмитическое из 
+		${x} введеных чисел = ${num / x}`)
+	} else {
+		document.write (`Нет введенных чисел. Перезагрузите страницу.`)
+	}
 };
