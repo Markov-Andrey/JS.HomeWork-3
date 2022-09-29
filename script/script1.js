@@ -3,8 +3,7 @@ function task1CycleFor () {
 	for (let i = 1; i <= 50; i++) {
 		if (i < 50) {
 			document.write (`${i}, `)
-		}
-		if (i == 50) {
+		} else {
 			document.write (`${i}. Расчет окончен! =)`)
 		}
 	};
@@ -15,8 +14,7 @@ function task1CycleWhile () {
 	while (i >= 8) {
 		if (i > 8) {
 			document.write (`${i}, `)
-		}
-		if (i == 8) {
+		} else {
 			document.write (`${i}. Расчет окончен! =)`)
 		}
 	i--
